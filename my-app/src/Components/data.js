@@ -1,4 +1,6 @@
-const data = {
+import React from 'react';
+
+export const data = {
 
     "mac":[
 

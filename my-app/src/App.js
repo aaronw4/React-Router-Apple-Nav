@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link, Route} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple} from '@fortawesome/free-brands-svg-icons';
-import {faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
+import {data} from './Components/data';
 import './App.css';
 import home from './Components/home';
-import mac from './Components/mac';
+import Mac from './Components/mac';
 import ipad from './Components/ipad';
 import iphone from './Components/iphone';
 import watch from './Components/watch';
@@ -15,7 +15,10 @@ import support from './Components/support';
 import search from './Components/search';
 import bag from './Components/bag';
 
+
 function App() {
+  const [items, setItems] = useState(data);
+  
   return (
     <div>
       <nav className='navBar'>
@@ -31,7 +34,12 @@ function App() {
           <Link to='/bag' className='link'><img className='symbol' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg'/></Link>
       </nav>
       <Route exact path='/' component={home}/>
-      <Route path='/mac' component={mac}/>
+      <Route 
+        path='/mac' 
+        render={() => {
+          return <Mac items={items.mac}/>
+        }}  
+      />
       <Route path='/ipad' component={ipad}/>
       <Route path='/iphone' component={iphone}/>
       <Route path='/watch' component={watch}/>

@@ -1,9 +1,12 @@
 import React from 'react';
+import SubNav from './subNav';
 
-const mac = () => {
+const Mac = (props) => {
     return(
-        <div>Mac</div>
+        <div>
+            <SubNav items={props.items}/>
+        </div>
     )
 }
 
-export default mac;
+export default Mac;
