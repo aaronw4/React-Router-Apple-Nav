@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link, Route} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 import home from './Components/home';
 import mac from './Components/mac';
@@ -16,7 +18,7 @@ function App() {
   return (
     <div>nav
             <nav>
-                <Link to='/'>Home</Link>
+                <Link to='/'><FontAwesomeIcon icon={faApple}/></Link>
                 <Link to='/mac'>Mac</Link>
                 <Link to='/ipad'>iPad</Link>
                 <Link to='/iphone'>iPhone</Link>
