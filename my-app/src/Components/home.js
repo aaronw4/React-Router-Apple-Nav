@@ -1,8 +1,10 @@
 import React from 'react';
+import homePage from '../Components/images/home.jpg';
 
 const home = () => {
     return(
-        <div>Home</div>
+        <img src={homePage} className='homeImg'/>
+
     )
 }
 
