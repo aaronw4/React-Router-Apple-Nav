@@ -6,14 +6,14 @@ import {data} from './Components/data';
 import './App.css';
 import home from './Components/home';
 import Mac from './Components/mac';
-import ipad from './Components/ipad';
-import iphone from './Components/iphone';
-import watch from './Components/watch';
-import tv from './Components/tv';
-import music from './Components/music';
-import support from './Components/support';
-import search from './Components/search';
-import bag from './Components/bag';
+import Ipad from './Components/ipad';
+import Iphone from './Components/iphone';
+import Watch from './Components/watch';
+import Tv from './Components/tv';
+import Music from './Components/music';
+import Support from './Components/support';
+import Search from './Components/search';
+import Bag from './Components/bag';
 
 
 function App() {
@@ -34,20 +34,15 @@ function App() {
           <Link to='/bag' className='link'><img className='symbol' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg'/></Link>
       </nav>
       <Route exact path='/' component={home}/>
-      <Route 
-        path='/mac' 
-        render={() => {
-          return <Mac items={items.mac}/>
-        }}  
-      />
-      <Route path='/ipad' component={ipad}/>
-      <Route path='/iphone' component={iphone}/>
-      <Route path='/watch' component={watch}/>
-      <Route path='/tv' component={tv}/>
-      <Route path='/music' component={music}/>
-      <Route path='/support' component={support}/>
-      <Route path='/search' component={search}/>
-      <Route path='/bag' component={bag}/>
+      <Route path='/mac' render={() => {return <Mac items={items.mac}/>}} />
+      <Route path='/ipad' render={() => {return <Ipad items={items.ipad}/>}} />
+      <Route path='/iphone' render={() => {return <Iphone items={items.iphone}/>}} />
+      <Route path='/watch' render={() => {return <Watch items={items.watch}/>}}/>
+      <Route path='/tv' render={() => {return <Tv items={items.tv}/>}}/>
+      <Route path='/music' render={() => {return <Music items={items.music}/>}}/>
+      <Route path='/support' component={Support}/>
+      <Route path='/search' component={Search}/>
+      <Route path='/bag' component={Bag}/>
     </div>
   );
 }

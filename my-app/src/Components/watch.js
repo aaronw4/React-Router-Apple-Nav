@@ -1,9 +1,12 @@
 import React from 'react';
+import SubNav from './subNav';
 
-const watch = () => {
+const Watch = (props) => {
     return(
-        <div>watch</div>
+        <div>
+            <SubNav items={props.items}/>
+        </div>
     )
 }
 
-export default watch;
+export default Watch;

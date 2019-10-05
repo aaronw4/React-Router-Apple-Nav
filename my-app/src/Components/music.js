@@ -1,9 +1,12 @@
 import React from 'react';
+import SubNav from './subNav';
 
-const music = () => {
+const Music = (props) => {
     return(
-        <div>music</div>
+        <div>
+            <SubNav items={props.items}/>
+        </div>
     )
 }
 
-export default music;
+export default Music;

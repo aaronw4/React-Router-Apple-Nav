@@ -1,9 +1,12 @@
 import React from 'react';
+import SubNav from './subNav';
 
-const tv = () => {
+const Tv = (props) => {
     return(
-        <div>tv</div>
+        <div>
+            <SubNav items={props.items}/>
+        </div>
     )
 }
 
-export default tv;
+export default Tv;

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const bad = () => {
+const Bag = (props) => {
     return(
-        <div>bad</div>
+        <div>
+            Bag
+        </div>
     )
 }
 
-export default bad;
+export default Bag;

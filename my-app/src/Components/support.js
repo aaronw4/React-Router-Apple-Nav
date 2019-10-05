@@ -1,9 +1,9 @@
 import React from 'react';
 
-const support = () => {
+const Support = () => {
     return(
-        <div>support</div>
+        <div>Support</div>
     )
 }
 
-export default support;
+export default Support;

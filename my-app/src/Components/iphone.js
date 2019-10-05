@@ -1,9 +1,12 @@
 import React from 'react';
+import SubNav from './subNav';
 
-const iphone = () => {
+const Iphone = (props) => {
     return(
-        <div>iPhone</div>
+        <div>
+            <SubNav items={props.items}/>
+        </div>
     )
 }
 
-export default iphone;
+export default Iphone;
