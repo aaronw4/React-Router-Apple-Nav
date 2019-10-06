@@ -1,8 +1,11 @@
 import React from 'react';
+import support from '../Components/images/support.png'
 
 const Support = () => {
     return(
-        <div>Support</div>
+        <div>
+            <img src={support} className='homeImg' alt='homepage'/>
+        </div>
     )
 }
 

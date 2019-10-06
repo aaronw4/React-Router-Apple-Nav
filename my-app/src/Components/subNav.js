@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 
 export default function SubNav(props){  
 
-    return(
-        <div className='subMenu' id={props.name}>
+    return(        
+        <div className='subMenu' id={props.name}>            
             {props.items.map(listing => (
                 <div className='diplayItems'>
                     <Link to='#' className='link2'>

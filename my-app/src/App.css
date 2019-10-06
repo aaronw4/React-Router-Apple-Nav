@@ -32,6 +32,10 @@
   color: black;  
 }
 
+.link2:hover {
+  color:#0071E3;
+}
+
 .icon {
   font-size: 22px;
 }
@@ -50,6 +54,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 10px 400px;
+  background-color: #F6F6F6
 }
 
 .diplayItems {
@@ -74,6 +79,10 @@
   padding: 10px 480px;
 }
 
+#watch {  
+  padding-top: 0;
+}
+
 #tv {
   background-color: black;
   padding: 10px 550px;
@@ -85,6 +94,10 @@
 
 .iphone, .tv {
   color: white;
+}
+
+.iphone:hover, .tv:hover {
+  color:#0071E3;
 }
 
 .watch {
