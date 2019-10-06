@@ -3,7 +3,7 @@ import homePage from '../Components/images/home.jpg';
 
 const home = () => {
     return(
-        <img src={homePage} className='homeImg'/>
+        <img src={homePage} className='homeImg' alt='homepage'/>
 
     )
 }

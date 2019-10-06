@@ -1,4 +1,3 @@
-import React from 'react';
 
 export const data = {
 
@@ -14,7 +13,7 @@ export const data = {
 
         {"name":"Mac Pro","url":"https://www.apple.com/v/mac/home/ai/images/familybrowser/mac_pro__bn92faz71k6a_large.svg"}, 
 
-        {"name":"Mac Mini","url":"https://www.apple.com/v/mac/home/ai/images/familybrowser/macmini__c6u0it831y0y_large.svg"}, 
+        {"name":"Mac mini","url":"https://www.apple.com/v/mac/home/ai/images/familybrowser/macmini__c6u0it831y0y_large.svg"}, 
 
         {"name":"Compare","url":"https://www.apple.com/v/mac/home/ai/images/familybrowser/mac_comp__ee2pokmcxh26_large.svg" },
 

@@ -21,7 +21,7 @@ function App() {
   
   return (
     <div>
-      <nav className='navBar'>
+      <nav className='navBar' id={window.location.pathname}>
           <Link to='/' className='link'><FontAwesomeIcon className='icon' icon={faApple}/></Link>
           <Link to='/mac' className='link'>Mac</Link>
           <Link to='/ipad' className='link'>iPad</Link>
@@ -30,14 +30,14 @@ function App() {
           <Link to='/tv' className='link'>TV</Link>
           <Link to='/music' className='link'>Music</Link>
           <Link to='/support' className='link'>Support</Link>
-          <Link to='/search' className='link'><img className='symbol' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg'/></Link>
-          <Link to='/bag' className='link'><img className='symbol' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg'/></Link>
+          <Link to='/search' className='link'><img className='symbol' alt='search' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg'/></Link>
+          <Link to='/bag' className='link'><img className='symbol' alt='bag' src='https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg'/></Link>
       </nav>
       <Route exact path='/' component={home}/>
       <Route path='/mac' render={() => {return <Mac items={items.mac}/>}} />
       <Route path='/ipad' render={() => {return <Ipad items={items.ipad}/>}} />
-      <Route path='/iphone' render={() => {return <Iphone items={items.iphone}/>}} />
-      <Route path='/watch' render={() => {return <Watch items={items.watch}/>}}/>
+      <Route path='/iphone' render={() => {return <Iphone items={items.iphone} name='iphone'/>}} />
+      <Route path='/watch' render={() => {return <Watch items={items.watch} name='watch'/>}}/>
       <Route path='/tv' render={() => {return <Tv items={items.tv}/>}}/>
       <Route path='/music' render={() => {return <Music items={items.music}/>}}/>
       <Route path='/support' component={Support}/>
