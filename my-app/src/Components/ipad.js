@@ -4,7 +4,7 @@ import SubNav from './subNav';
 const Ipad = (props) => {
     return(
         <div>
-            <SubNav items={props.items}/>
+            <SubNav items={props.items} name={props.name}/>
         </div>
     )
 }
